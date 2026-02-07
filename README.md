@@ -16,6 +16,24 @@ This project explores what makes certain candies more popular than others using 
 
 Both approaches answer the same business questions: sugar vs price, type-based patterns, top performers, and ingredient impact on win percentage.
 
+### Project & implementation workflow
+
+```mermaid
+flowchart LR
+    A[(toffee-data.csv)]
+    subgraph Jupyter["Jupyter"]
+        B[Notebook]
+        B --> C[CSVs]
+        B --> D[PNGs]
+    end
+    subgraph Tableau["Tableau"]
+        E[Workbook]
+        E --> F[PDF / PPTX]
+    end
+    A --> B
+    A --> E
+```
+
 ---
 
 ## Repository Structure
